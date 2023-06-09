@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Validar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 style="margin: 15px 0">Cadastro de pessoa</h1>
+
+                        <div class="form-grup">
+                            <label>Nome:</label>
+                            <input class="form-control" type="text" name="nome" id="nome" minlength="4" maxlength="24" placeholder="Digite seu nome...">
+                        </div>
+    
+                        <div class="form-grup">
+                            <label >Email:</label>
+                            <input class="form-control" type="email" name="email" id="email" minlength="6" maxlength="24" placeholder="Digite seu e-mail...">
+                        </div>
+    
+                        <div class="form-grup">
+                            <label >CPF:</label>
+                            <input class="form-control" type="text" name="nome" id="cpf" minlength="11" maxlength="11" placeholder="Digite seu cpf...">
+                        </div>
+    
+                        <div class="form-grup">
+                            <label>Celular:</label>
+                            <input class="form-control" type="text" name="nome" id="celular" minlength="15" maxlength="15" OnKeyPress="formatar('(##) #####-#####',this)" placeholder="Digite o número do seu telefone...">
+                        </div>
+                        <button onclick="salvar()" style="margin: 15px 0;" type="button" class="btn btn-primary">Salvar</button>
+                        <div id="verificado"></div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="js/validacao.js"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
+</body>
+</html>
