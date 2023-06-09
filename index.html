@@ -15,29 +15,32 @@
             <div class="col-6">
                 <div class="card">
                     <div class="card-body">
-                        <h1 style="margin: 15px 0">Cadastro de pessoa</h1>
+                        <form action="" class="meuForm" id="meuForm">
+                            <h1 style="margin: 15px 0">Cadastro de pessoa</h1>
 
-                        <div class="form-grup">
-                            <label>Nome:</label>
-                            <input class="form-control" type="text" name="nome" id="nome" minlength="4" maxlength="24" placeholder="Digite seu nome...">
-                        </div>
-    
-                        <div class="form-grup">
-                            <label >Email:</label>
-                            <input class="form-control" type="email" name="email" id="email" minlength="6" maxlength="24" placeholder="Digite seu e-mail...">
-                        </div>
-    
-                        <div class="form-grup">
-                            <label >CPF:</label>
-                            <input class="form-control" type="text" name="nome" id="cpf" minlength="11" maxlength="11" placeholder="Digite seu cpf...">
-                        </div>
-    
-                        <div class="form-grup">
-                            <label>Celular:</label>
-                            <input class="form-control" type="text" name="nome" id="celular" minlength="15" maxlength="15" OnKeyPress="formatar('(##) #####-#####',this)" placeholder="Digite o número do seu telefone...">
-                        </div>
-                        <button onclick="salvar()" style="margin: 15px 0;" type="button" class="btn btn-primary">Salvar</button>
-                        <div id="verificado"></div>
+                            <div class="form-grup">
+                                <label>Nome:</label>
+                                <input class="form-control" type="text" name="nome" id="nome" minlength="4" maxlength="24" placeholder="Digite seu nome...">
+                            </div>
+        
+                            <div class="form-grup">
+                                <label >Email:</label>
+                                <input class="form-control" type="email" name="email" id="email" minlength="6" maxlength="24" placeholder="Digite seu e-mail...">
+                            </div>
+        
+                            <div class="form-grup">
+                                <label >CPF:</label>
+                                <input class="form-control" type="number" name="cpf" id="cpf" minlength="11" maxlength="11" placeholder="Digite seu cpf...">
+                            </div>
+        
+                            <div class="form-grup">
+                                <label>Celular:</label>
+                                <input class="form-control" type="number" name="nome" id="celular" minlength="15" maxlength="15" OnKeyPress="formatar('(##) #####-#####',this)" placeholder="Digite o número do seu telefone...">
+                            </div>
+                            <button onclick="salvar()" style="margin: 15px 0;" type="button" class="btn btn-primary">Salvar</button>
+                            <div id="verificado"></div>
+                            
+                        </form>
                     </div>
                 </div>
             </div>
@@ -45,6 +48,7 @@
         </div>
     </div>
 
+    <script src="js/gravar.js"></script>
     <script src="js/validacao.js"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
     <script src="bootstrap/js/cdn.jsdelivr.net_npm_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
